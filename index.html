@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Front End Test - Greenthumb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.scss" />
+    <link rel="stylesheet" href="./styles/breakpoints.scss" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="banner">
+        <div class="banner__mobile">
+          <img
+            src="assets/images/hero/mobile/mobile-leaves.png"
+            class="leaves__only-mobile only-mobile"
+            alt=""
+          />
+
+          <img
+            src="assets/images/hero/mobile/mobile-plantperson.png"
+            class="plantperson__only-mobile only-mobile"
+            alt=""
+          />
+        </div>
+        <div class="banner__l-leaves">
+          <img
+            src="assets/images/hero/desktop/left-leaves.png"
+            class="leaves-l only-desk"
+            alt=""
+          />
+        </div>
+        <div class="banner__plantperson">
+          <img
+            src="assets/images/hero/desktop/plantperson.png"
+            class="plantperson__only-desk only-desk"
+            alt=""
+          />
+        </div>
+        <div class="banner__r-leaves">
+          <img
+            src="assets/images/hero/desktop/right-leaves.png"
+            class="leaves-r only-desk"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="header__container">
+        <nav class="header__nav">
+          <a href="#" class="header__nav-logo">
+            <img
+              src="./assets/images/icons/logo-white.svg"
+              alt="Greenthumb white logo"
+              class="nav__logo-img"
+            />
+          </a>
+        </nav>
+
+        <h1 class="header__nav-title">Find your next green friend</h1>
+        <img
+          src="./assets/images/icons/arrow-down.svg"
+          alt="Arrow Down Icon"
+          class="header__arrow"
+        />
+        <img
+          src="./assets/images/hero/mobile/mobile-plantperson.png"
+          alt="pessoa com vaso de planta"
+          class="header__mobile-plantperson"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="section__select">
+        <div class="section__select-container">
+          <div class="section_select-group">
+            <img
+              src="assets/images/illustrations/sun.png"
+              alt="Sun"
+              class="section_select-icon"
+            />
+            <p class="section__select-option">
+              <strong>1&#46;</strong> Set the amount of
+              <strong> sunlight</strong> your plant will get.
+            </p>
+            <select
+              id="sun"
+              class="form-select sun-select"
+              aria-label="Default select example"
+            >
+              <option selected>Select...</option>
+              <option value="no">no</option>
+              <option value="low">low</option>
+              <option value="high">high</option>
+            </select>
+          </div>
+
+          <div class="section_select-group">
+            <img
+              src="assets/images/illustrations/wateringcan.png"
+              alt="Watering Can icon"
+              class="section_select-icon wateringcan"
+            />
+            <p class="section__select-option">
+              <strong>2&#46;</strong> How often do you want to
+              <strong>water</strong> your plant?
+            </p>
+            <select
+              id="water"
+              class="form-select water-select"
+              aria-label="Default select example"
+            >
+              <option selected>Select...</option>
+              <option value="1">Regularly</option>
+              <option value="2">Daily</option>
+              <option value="3">Rarely</option>
+            </select>
+          </div>
+
+          <div class="section_select-group">
+            <img
+              src="assets/images/illustrations/dog.png"
+              alt="Dog icon"
+              class="section_select-icon"
+            />
+            <p class="section__select-option">
+              <strong>3&#46;</strong> Do you have pets? Do they
+              <strong>chew</strong> plants?
+            </p>
+            <select
+              id="pets"
+              on
+              class="form-select pet-select"
+              aria-label="Default select example"
+            >
+              <option selected>Select...</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section class="section__results">
+        <div class="section__results-container">
+          <div class="section__results-pick">
+            <img
+              src="assets/images/illustrations/pick.png"
+              alt="Picking up leaves image"
+              class="section__results-pick-img"
+            />
+            <h2>Our picks for you</h2>
+          </div>
+          <div class="section__results-content">
+            <div class="section__results-swipe">
+              <div id="id" class="section__results-card section__results-card-big">
+                <div
+                  class="
+                    section__results-card-content
+                    section__results-card-content-big
+                  "
+                >
+                  <span id="staff_favorite"
+                    class="
+                      section__results-card-favorite
+                      section__results-card-favorite-big
+                    "
+                  >
+                    ✨ Staff favorite
+                  </span>
+                  <img id="url"
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=" A plant image"
+                    class="
+                      section__results-card-plant
+                      section__results-card-plant-big
+                    "
+                  />
+                  <div
+                    class="
+                      section__results-card-info section__results-card-info-big
+                    "
+                  >
+                    <div
+                      class="
+                        section__results-card-datas
+                        section__results-card-datas-big
+                      "
+                    >
+                      <p id="name"
+                        class="
+                          section__results-card-name
+                          section__results-card-name-big
+                        "
+                      >
+                        Bunny ear cacti
+                      </p>
+                      <p id="price"
+                        class="
+                          section__results-card-price
+                          section__results-card-price-big
+                        "
+                      >
+                        $25
+                      </p>
+                    </div>
+                    <div
+                      class="
+                        section__results-card-icons
+                        section__results-card-icons-big
+                      "
+                    >
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon-big"
+                        alt="pet icon"
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon-big"
+                        alt="sun icon"
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon-big"
+                        alt="water drop icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section__results-card">
+                <div class="section__results-card-content">
+                  <p class="section__results-card-favorite">
+                    ✨ Staff favorite
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/front-br-challenges.appspot.com/green-thumb-v2/plants/bunny-ears-cacti.png"
+                    alt=""
+                    class="section__results-card-plant"
+                  />
+                  <div class="section__results-card-info">
+                    <div class="section__results-card-datas">
+                      <p class="section__results-card-name">Bunny ear cacti</p>
+                      <p class="section__results-card-price">$25</p>
+                    </div>
+                    <div class="section__results-card-icons">
+                      <img
+                        src="assets/images/icons/pet.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/low-sun.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                      <img
+                        src="assets/images/icons/1-drop.svg"
+                        class="section__results-card-icon"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__noresults">
+        <div class="footer__noresults-message">
+          <h3>No results yet…</h3>
+          <p>
+            Use the filters above to find the plant that best fits your
+            environment :)
+          </p>
+        </div>
+        <div class="footer__noresults-img">
+          <img
+            src="assets/images/illustrations/no-results.png"
+            alt="No Results Image"
+            class="footer__noresults-img"
+          />
+        </div>
+      </div>
+
+      <div class="footer__button-div">
+        <a href="#header" class="footer__button">
+          <img src="assets/images/icons/arrow-up.svg" alt="" />
+
+          <span> back to the top </span>
+        </a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
